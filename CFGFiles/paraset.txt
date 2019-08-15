@@ -1,0 +1,45 @@
+ServerIP = 121.43.109.89     //主机(后台服务器)地址
+SVR_PORT = 7007              //主机端口号(发送指向的端口号)
+UDP_IP = 224.0.0.1           //UDP广播发送地址
+UDP_PORT = 7000              //UDP侦听端口号(本机接收的端口号)
+
+COMMode = 2G                 //与主站的通信模式：0:2G  1:3G  2:ETH 
+APN = CMNET                  //2/3G拨号时，APN网络名
+APNName =                    //拨号时用户名
+APNPWD =                     //拨号是密码
+
+Intervaltime = 120           //采样间隔时间
+DevID = F12233445566         //设备ID 固定6字节HEX值 表示集中器地址
+PlcID = FF5555555555         //载波通信地址
+
+ICCARD = 61                  //IC卡片扇区设置，指定上报的扇区0～63
+PWDMODE = 00                 //密钥启用模式(1字节 00:指定密钥;01:卡号密码;0xff:密钥无效)
+PWDBYTE = 11111111111111 //FFFFFFFFFFFF       //扇区的密钥(6字节)
+CARDFUNC = 00                //取电开关功能启用模式(1字节)B0酒店识别;B1房间识别;B2时间识别
+HOTELID = 485057494E         //酒店ID号(5字节)HPWIN
+
+ParaVar = 0                               //当前参数版本号0～65535
+HardVar = 01.02.00                        //硬件版本8个字节
+HardName = wjx                            //硬件设计者名字36字节
+SoftVar = 01.03.00                        //软件版本
+SoftName = wjx                            //软件设计者名字36字节
+SetTime = 20150819000000                  //设置时间
+
+Block_to_read = 61          // 读取卡数据第n块 默认61
+
+Ac_interval = 120          //采集间隔  默认120
+
+
+Cip_mode = 0               //加密方式 默认0
+
+Cipherbuf = FFFFFFFFFFFF       // 卡密码 默认全FF
+
+Running_mode = 0             //运行模式 默认0
+
+Hotel_id = HPWIN          //酒店代码 默认：HPWIN
+
+Roomcode = 000           //默认 0，0，0
+
+Room_storage_num = 30       //满多少个数据上报 默认：30
+
+Reset_relay_flag = 1       //继电器定时复位标志
